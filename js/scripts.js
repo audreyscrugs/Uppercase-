@@ -2,8 +2,8 @@ $(document).ready(function() {
   $("#blanks form").submit(function(event) {
     var sentenceInput = $("input#sentence").val();
 
-    $(".sentence").text(sentenceInput);
-    $(sentenceInput).toUpperCase();
+    $(".sentence").text(sentenceInput.toUpperCase());
+
 
     $("#capslock").show();
 
